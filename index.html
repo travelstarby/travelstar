@@ -11,66 +11,110 @@
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap top__in">
-    <span class="logo">Travelstar</span>
-    <a class="top__link" href="https://t.me/travelstarby">@travelstarby</a>
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top">Travelstar</a>
+    <nav class="nav__links">
+      <a href="#about">Обо мне</a>
+      <a href="#where">Направления</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#quiz">Заявка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
   </div>
 </header>
 
 <main>
   <section class="hero">
+    <img class="hero__bg" src="img/sea.jpg" width="1280" height="854" alt="">
+    
     <div class="wrap hero__in">
-      <div class="hero__text">
-        <h1>Ко мне приходят по рекомендации и возвращаются снова. Подберу тур и вам.</h1>
-        <p class="lead">Напишите, куда хочется, даты и бюджет — пришлю варианты и расскажу о нюансах каждого. Подбор бесплатный.</p>
-        <div class="buttons">
-          <a class="btn btn--tg" href="https://t.me/travelstarby">Написать в Telegram</a>
-          <a class="btn btn--viber" href="viber://chat?number=%2B375257646653">Написать в Viber</a>
-        </div>
+      <h1>Ко мне приходят по рекомендации и возвращаются снова. Подберу тур и вам.</h1>
+      <p class="lead">Напишите, куда хочется, даты и бюджет — пришлю варианты и расскажу о нюансах каждого.</p>
+      <div class="buttons">
+        <a class="btn btn--tg" href="https://t.me/travelstarby">Написать в Telegram</a>
+        <a class="btn btn--glass" href="viber://chat?number=%2B375257646653">Написать в Viber</a>
       </div>
-      <img class="hero__photo" src="img/sea.jpg" width="1280" height="854" alt="Мальдивы: белая песчаная коса и бирюзовая вода">
     </div>
   </section>
 
-  <section class="steps">
+  <section class="steps" id="about">
     <div class="wrap steps__in">
       <img class="steps__photo" src="img/valentina_v2.jpg" width="960" height="800" alt="Валентина за рабочим столом с ноутбуком" loading="lazy">
       <div>
-      <h2>Как я работаю</h2>
+      <h2>Обо мне</h2>
+      <p class="about">Я Валентина. В туризме с 2020 года, и почти все мои туристы пришли по совету знакомых. Для меня это главная оценка работы: человек отдохнул и рассказал обо мне подруге. Поэтому я не предлагаю «что есть», а ищу то, что подойдёт именно вам, и о нюансах говорю заранее, чтобы на месте не было сюрпризов.</p>
+      <h3 class="steps__title">Как я работаю</h3>
       <ol class="steps__list">
-        <li><b>1</b><p>Вы пишете: куда, когда, бюджет, кто едет.</p></li>
-        <li><b>2</b><p>Я присылаю несколько вариантов и рассказываю о нюансах: какое море, далеко ли пляж, кому отель подойдёт, а кому нет.</p></li>
-        <li><b>3</b><p>Выбираем вместе, я бронирую и остаюсь на связи до вашего возвращения.</p></li>
+        <li><b>1</b><p>Вы пишете мне: куда, когда, бюджет и кто едет. Можно голосовым.</p></li>
+        <li><b>2</b><p>Я присылаю несколько вариантов и рассказываю, чем они отличаются: какое море, далеко ли пляж, кому отель подойдёт, а кому нет.</p></li>
+        <li><b>3</b><p>Вы выбираете, я бронирую. И остаюсь на связи, пока вы не вернётесь домой.</p></li>
       </ol>
       </div>
     </div>
   </section>
 
-  <section class="reviews">
+  <section class="where" id="where">
+    <div class="wrap">
+      <h2>Летаем куда угодно</h2>
+      <p class="where__lead">Подберу тур в любую страну, прямым рейсом или с пересадкой. Ниже популярные направления: нажмите на любое, и откроется чат со мной.</p>
+      <div class="cards">
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82"><img src="img/d_egypt.jpg" alt="Египет: коралловый риф и горы" loading="lazy"><span class="card__cap"><h3>Египет</h3><p>Тёплое море и рифы даже зимой</p></span></a>
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%90%D0%B7%D0%B8%D1%8F"><img src="img/d_asia.jpg" alt="Азия: храм в джунглях" loading="lazy"><span class="card__cap"><h3>Азия</h3><p>Таиланд, Вьетнам, Китай: море и экскурсии</p></span></a>
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%9E%D0%90%D0%AD"><img src="img/d_uae.jpg" alt="ОАЭ: город на закате" loading="lazy"><span class="card__cap"><h3>ОАЭ</h3><p>Пляж днём, город и шопинг вечером</p></span></a>
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F"><img src="img/d_turkey.jpg" alt="Турция: бассейн с горками" loading="lazy"><span class="card__cap"><h3>Турция</h3><p>Всё для всех. Раннее бронирование на лето с ноября</p></span></a>
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%9C%D0%B0%D0%BB%D1%8C%D0%B4%D0%B8%D0%B2%D1%8B"><img src="img/d_maldives.jpg" alt="Мальдивы: вилла над водой" loading="lazy"><span class="card__cap"><h3>Мальдивы</h3><p>Вилла над водой и тишина</p></span></a>
+        <a class="card" href="https://t.me/travelstarby?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%A8%D1%80%D0%B8-%D0%9B%D0%B0%D0%BD%D0%BA%D0%B0"><img src="img/d_srilanka.jpg" alt="Шри‑Ланка: слон и чайные плантации" loading="lazy"><span class="card__cap"><h3>Шри‑Ланка</h3><p>Природа, слоны и чайные плантации</p></span></a>
+      </div>
+      <div class="any">
+        <p class="any__list">Европа · Грузия · Кипр · Тунис · Черногория · Абхазия · Россия · Куба · Доминикана · Бали</p>
+        <p>Не нашли свою страну? Просто напишите, куда хочется.</p>
+        <a class="btn" href="https://t.me/travelstarby">Подобрать тур</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
     <div class="wrap">
       <h2>Что пишут после поездки</h2>
+      <div class="story">
+        <div class="story__text">
+          <p class="story__label">История одной поездки</p>
+          <p>Туристка с родителями хотела зимой на Кубу. Кубу закрыли. Мы перебрали кучу стран и отелей, забронировали Турцию с вылетом из Москвы, а когда вылеты стали непредсказуемыми, перебронировали на Тунис из Минска.</p>
+          <p>Полетели. А до этого она уже отдыхала со мной на Кипре, так что это была её вторая поездка.</p>
+        </div>
+        <blockquote><p>«Родители передают Вам огромную благодарность, что вытерпели все наши долгие попытки улететь, потратили с нами столько времени, всё супер, всем всё очень понравилось. Будем и дальше с Вами сотрудничать»</p><cite>Тунис, вторая поездка со мной</cite></blockquote>
+      </div>
       <div class="reviews__grid">
-        <blockquote><p>«Родители передают вам огромную благодарность… всем всё очень понравилось. Будем и дальше с вами сотрудничать»</p><cite>Тунис, вторая поездка со мной</cite></blockquote>
-        <blockquote><p>«Мы в восторге, всё организовано на хорошем уровне… Обязательно вернёмся ещё»</p><cite>Санкт-Петербург, семья</cite></blockquote>
-        <blockquote><p>«Благодаря вам я очень хорошо отдохнула!»</p><cite>Абхазия</cite></blockquote>
+        <blockquote><p>«Честно скажу, мы в восторге, всем всё понравилось, очень всё организовано на хорошем уровне. Мы рады, что выбрали этот вариант и всё же взяли с экскурсиями… Обязательно вернёмся ещё»</p><cite>Санкт-Петербург, семья</cite></blockquote>
+        <blockquote><p>«Хочу сказать тебе огромное спасибо за подобранный тур! Мне очень всё понравилось. Я думаю, Абхазия теперь мой любимый курорт! Благодаря Вам я очень хорошо отдохнула!»</p><cite>Абхазия</cite></blockquote>
+        <blockquote><p>«Утром встретила, всё супер, Вам огромное спасибо от родителей. Очень довольны, всё понравилось. Зимой буду ещё к Вам обращаться»</p><cite>Кипр, первая поездка. Зимой вернулась</cite></blockquote>
       </div>
     </div>
   </section>
 
   <section class="faq">
-    <div class="wrap">
-      <h2>Вопросы</h2>
-      <details><summary>Сколько стоит подбор?</summary><p>Бесплатно. Вы платите только за тур.</p></details>
-      <details><summary>Можно в рассрочку?</summary><p>Да, если бронировать заранее: рассрочку даёт туроператор.</p></details>
-      <details><summary>Куда летаем?</summary><p>Любые направления по запросу, прямым рейсом или с пересадкой.</p></details>
+    <div class="wrap faq__in">
+      <div class="faq__side">
+        <h2>Частые вопросы</h2>
+        <p>Не нашли ответ? Напишите, отвечу лично.</p>
+        <a class="btn" href="https://t.me/travelstarby">Задать вопрос</a>
+      </div>
+      <div class="faq__list">
+        <details open><summary>Сколько стоит подбор?</summary><p>Бесплатно. Вы платите только за тур.</p></details>
+        <details><summary>Можно в рассрочку?</summary><p>Да, если бронировать заранее: рассрочку даёт туроператор. Раннее бронирование на лето стартует в ноябре.</p></details>
+        <details><summary>Куда летаем?</summary><p>Любые направления по запросу, прямым рейсом или с пересадкой.</p></details>
+        <details><summary>Что если в поездке что-то пойдёт не так?</summary><p>Я на связи всю поездку, до вашего возвращения домой. Пишите в любой мессенджер, решим.</p></details>
+        <details><summary>Я ни разу не летал(а) за границу. Поможете?</summary><p>Да. Расскажу по шагам: какие документы нужны, как пройти регистрацию на рейс, что взять с собой.</p></details>
+        <details><summary>Почему не купить тур самому на сайте?</summary><p>Можно. Но в описании отеля не напишут, что пляж через дорогу, а море в эти даты штормит. Я расскажу об этом до покупки, а не после.</p></details>
+      </div>
     </div>
   </section>
 
   <section class="dest" id="quiz">
     <div class="wrap">
       <h2>Расскажите о поездке</h2>
-      <p>Море, экскурсии, отдых с детьми — ответьте на 4 вопроса, и я подскажу, куда лучше.</p>
+      <p>Ответьте на 4 вопроса, это займёт минуту. Сообщение с ответами уйдёт мне в Telegram или Viber, и я подскажу, куда лучше.</p>
       <form class="quiz" onsubmit="return false">
         <fieldset>
           <legend>1. Какой отдых хочется?</legend>
@@ -92,6 +136,7 @@
   </section>
 
   <section class="final">
+    <img class="final__bg" src="img/d_maldives.jpg" alt="" loading="lazy">
     <div class="wrap">
       <h2>Расскажите, какой отпуск хотите. Остальное — моя работа.</h2>
       <div class="buttons buttons--center">
@@ -100,10 +145,17 @@
       </div>
     </div>
   </section>
+  <section class="contacts" id="contacts">
+    <div class="wrap contacts__in">
+      <h2>Контакты</h2>
+      <a class="contact" href="https://t.me/travelstarby"><span>Telegram</span>@travelstarby</a>
+      <a class="contact" href="viber://chat?number=%2B375257646653"><span>Viber</span>+375 25 764-66-53</a>
+    </div>
+  </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap">ИП Ковальчук Валентина Дмитриевна · УНП 693222259<br><small>Фото моря: <a href="https://commons.wikimedia.org/wiki/File:Sandbank_Malediven_(29447070765).jpg">dronepicr</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small></div>
+  <div class="wrap">ИП Ковальчук Валентина Дмитриевна · УНП 693222259<br><small>Фото моря на первом экране: <a href="https://commons.wikimedia.org/wiki/File:Sandbank_Malediven_(29447070765).jpg">dronepicr</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small></div>
 </footer>
 
 <script>
