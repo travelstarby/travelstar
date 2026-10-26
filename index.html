@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travelstar — подбор туров</title>
+<meta name="description" content="Подберу тур под ваши даты и бюджет и расскажу о нюансах каждого варианта. Подбор бесплатный.">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <span class="logo">Travelstar</span>
+    <a class="top__link" href="https://t.me/travelstarby">@travelstarby</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__text">
+        <h1>Ко мне приходят по рекомендации и возвращаются снова. Подберу тур и вам.</h1>
+        <p class="lead">Напишите, куда хочется, даты и бюджет — пришлю варианты и расскажу о нюансах каждого. Подбор бесплатный.</p>
+        <div class="buttons">
+          <a class="btn btn--tg" href="https://t.me/travelstarby">Написать в Telegram</a>
+          <a class="btn btn--viber" href="viber://chat?number=%2B375257646653">Написать в Viber</a>
+        </div>
+      </div>
+      <img class="hero__photo" src="img/sea.jpg" width="1280" height="854" alt="Мальдивы: белая песчаная коса и бирюзовая вода">
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap steps__in">
+      <img class="steps__photo" src="img/valentina_v2.jpg" width="960" height="800" alt="Валентина за рабочим столом с ноутбуком" loading="lazy">
+      <div>
+      <h2>Как я работаю</h2>
+      <ol class="steps__list">
+        <li><b>1</b><p>Вы пишете: куда, когда, бюджет, кто едет.</p></li>
+        <li><b>2</b><p>Я присылаю несколько вариантов и рассказываю о нюансах: какое море, далеко ли пляж, кому отель подойдёт, а кому нет.</p></li>
+        <li><b>3</b><p>Выбираем вместе, я бронирую и остаюсь на связи до вашего возвращения.</p></li>
+      </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="wrap">
+      <h2>Что пишут после поездки</h2>
+      <div class="reviews__grid">
+        <blockquote><p>«Родители передают вам огромную благодарность… всем всё очень понравилось. Будем и дальше с вами сотрудничать»</p><cite>Тунис, вторая поездка со мной</cite></blockquote>
+        <blockquote><p>«Мы в восторге, всё организовано на хорошем уровне… Обязательно вернёмся ещё»</p><cite>Санкт-Петербург, семья</cite></blockquote>
+        <blockquote><p>«Благодаря вам я очень хорошо отдохнула!»</p><cite>Абхазия</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <h2>Вопросы</h2>
+      <details><summary>Сколько стоит подбор?</summary><p>Бесплатно. Вы платите только за тур.</p></details>
+      <details><summary>Можно в рассрочку?</summary><p>Да, если бронировать заранее: рассрочку даёт туроператор.</p></details>
+      <details><summary>Куда летаем?</summary><p>Любые направления по запросу, прямым рейсом или с пересадкой.</p></details>
+    </div>
+  </section>
+
+  <section class="dest" id="quiz">
+    <div class="wrap">
+      <h2>Расскажите о поездке</h2>
+      <p>Море, экскурсии, отдых с детьми — ответьте на 4 вопроса, и я подскажу, куда лучше.</p>
+      <form class="quiz" onsubmit="return false">
+        <fieldset>
+          <legend>1. Какой отдых хочется?</legend>
+          <label><input type="radio" name="kind" value="Море и пляж" checked> Море и пляж</label>
+          <label><input type="radio" name="kind" value="Экскурсии"> Экскурсии</label>
+          <label><input type="radio" name="kind" value="Отдых с детьми"> Отдых с детьми</label>
+          <label><input type="radio" name="kind" value="Пока не знаю, нужен совет"> Пока не знаю, нужен совет</label>
+        </fieldset>
+        <label class="field">2. Когда? <input name="when" placeholder="середина января, 10 ночей"></label>
+        <label class="field">3. Бюджет <input name="budget" placeholder="до 5000 BYN на всех"></label>
+        <label class="field">4. Кто едет? <input name="who" placeholder="2 взрослых + ребёнок 6 лет"></label>
+        <div class="buttons">
+          <button class="btn btn--tg" type="button" data-to="tg">Отправить в Telegram</button>
+          <button class="btn btn--viber" type="button" data-to="viber">Отправить в Viber</button>
+        </div>
+        <p class="quiz__note" hidden>Текст заявки скопирован. Если он не появился в чате, просто вставьте его.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Расскажите, какой отпуск хотите. Остальное — моя работа.</h2>
+      <div class="buttons buttons--center">
+        <a class="btn btn--tg" href="https://t.me/travelstarby">Написать в Telegram</a>
+        <a class="btn btn--viber" href="viber://chat?number=%2B375257646653">Написать в Viber</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">ИП Ковальчук Валентина Дмитриевна · УНП 693222259<br><small>Фото моря: <a href="https://commons.wikimedia.org/wiki/File:Sandbank_Malediven_(29447070765).jpg">dronepicr</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small></div>
+</footer>
+
+<script>
+// Опрос: собираем ответы в текст и открываем чат с Валентиной
+document.querySelectorAll('.quiz [data-to]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var f = b.form;
+    var t = 'Здравствуйте! Хочу подобрать тур.\n' +
+      'Отдых: ' + f.kind.value + '\n' +
+      'Когда: ' + (f.when.value || '—') + '\n' +
+      'Бюджет: ' + (f.budget.value || '—') + '\n' +
+      'Кто едет: ' + (f.who.value || '—');
+    try { navigator.clipboard.writeText(t); } catch (e) {}
+    f.querySelector('.quiz__note').hidden = false;
+    var u = b.dataset.to === 'tg'
+      ? 'https://t.me/travelstarby?text=' + encodeURIComponent(t)
+      : 'viber://chat?number=%2B375257646653&draft=' + encodeURIComponent(t);
+    window.location.href = u;
+  });
+});
+</script>
+
+</body>
+</html>

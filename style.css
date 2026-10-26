@@ -1,0 +1,83 @@
+/* Черновые цвета и шрифт: заменим после мудборда (пятница) */
+:root {
+  /* 1 «Море» + 3 «Бирюза»: морской синий текст, бирюзовые кнопки, голубые и мятные блоки */
+  --bg: #ffffff;
+  --text: #0d2b45;
+  --muted: #4f6272;
+  --sea: #14958c;
+  --sand: #eaf3f7;
+  --mint: #c6ebe4;
+  --tg: #14958c;
+  --viber: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; }
+body { font: 16px/1.45 "Montserrat", system-ui, sans-serif; color: var(--text); background: var(--bg); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+h1, h2, .logo { font-family: "Cormorant Garamond", Georgia, serif; }
+h1 { font-size: 2.1rem; line-height: 1.15; font-weight: 600; }
+h2 { font-size: 1.75rem; line-height: 1.2; font-weight: 600; margin-bottom: 16px; }
+section { padding: 40px 0; }
+
+.top { padding: 12px 0; border-bottom: 1px solid var(--sand); }
+.top__in { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 700; color: var(--text); }
+.top__link { color: var(--muted); text-decoration: none; }
+
+.hero { padding-top: 24px; }
+.hero__in { display: grid; gap: 20px; }
+.lead { margin: 12px 0 20px; color: var(--muted); }
+.hero__photo { width: 100%; height: 220px; border-radius: 16px; display: block;
+  object-fit: cover; object-position: 50% 62%; }
+.foot small { opacity: .75; font-size: inherit; }
+.foot small a { color: inherit; }
+
+.buttons { display: grid; gap: 10px; }
+.btn { display: block; text-align: center; padding: 14px 20px; border-radius: 12px;
+  color: #fff; font-weight: 600; text-decoration: none; }
+.btn--tg { background: var(--tg); }
+.btn--viber { background: var(--viber); color: var(--sea); border: 2px solid var(--sea); }
+.btn:hover { filter: brightness(1.08); }
+
+.steps { background: var(--sand); }
+.steps__list { list-style: none; padding: 0; display: grid; gap: 16px; }
+.steps__list li { display: flex; gap: 14px; align-items: flex-start; }
+.steps__list b { flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: var(--sea);
+  color: #fff; display: grid; place-items: center; }
+
+.reviews__grid { display: grid; gap: 16px; }
+blockquote { background: #fff; border: 1px solid var(--sand); border-radius: 14px; padding: 18px; }
+cite { display: block; margin-top: 10px; color: var(--muted); font-style: normal; }
+
+details { border-bottom: 1px solid var(--sand); padding: 14px 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin-top: 8px; color: var(--muted); }
+
+.dest { background: var(--mint); }
+.steps__in { display: grid; gap: 24px; }
+.steps__photo { width: 100%; height: auto; border-radius: 16px; display: block; }
+.quiz { margin-top: 20px; display: grid; gap: 16px; }
+fieldset { border: 0; padding: 0; display: grid; gap: 8px; }
+legend, .field { font-weight: 600; }
+fieldset label { font-weight: 400; display: flex; gap: 10px; align-items: center; background: #fff; border-radius: 10px; padding: 10px 12px; }
+.field { display: grid; gap: 6px; }
+.field input { font: inherit; font-weight: 400; padding: 12px; border: 1px solid #a9d9d0; border-radius: 10px; background: #fff; }
+button.btn { border: 0; font: inherit; font-weight: 600; cursor: pointer; width: 100%; }
+.quiz__note { color: var(--muted); }
+.final { text-align: center; }
+.foot { padding: 20px 0; color: var(--muted); border-top: 1px solid var(--sand); text-align: center; }
+
+@media (min-width: 800px) {
+  h1 { font-size: 2.9rem; }
+  section { padding: 64px 0; }
+  .hero__in { grid-template-columns: 1.1fr 1fr; align-items: center; gap: 40px; }
+  .hero__photo { height: 400px; }
+  .buttons { grid-template-columns: auto auto; justify-content: start; }
+  .buttons--center { justify-content: center; }
+  .steps__in { grid-template-columns: 1fr 1.1fr; align-items: center; gap: 48px; }
+  .quiz { max-width: 560px; }
+  .quiz .buttons button { width: auto; }
+  .reviews__grid { grid-template-columns: repeat(3, 1fr); }
+  .faq .wrap, .dest .wrap { max-width: 760px; }
+}
+button.btn--viber { border: 2px solid var(--sea); }
+input[type=radio] { accent-color: var(--sea); }
